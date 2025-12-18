@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void bubble_sort(int arr[], int n) {
     for (int i = 0; i < n-1; i++) {
         for (int j = 0; j < n-i-1; j++) {
@@ -9,4 +11,10 @@ void bubble_sort(int arr[], int n) {
         }
     }
 }
-// Сложность O(n^2)
+
+int main() {
+    int a[] = {4, 2, 0, 3};
+    int n = sizeof(a)/sizeof(a[0]);
+    bubble_sort(a, n);
+    return 0;
+}
